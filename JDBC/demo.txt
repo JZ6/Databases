@@ -1,0 +1,269 @@
+b2200-16:~$ ssh teachma3@dbsrv1.teach.cs.toronto.edu
+    Type "faq" to view FAQ, and "rules" to view usage policy.
+    Report system problems by sending email to <admin@teach.cs.toronto.edu>.
+
+The Teaching Labs are: BA2200 BA2210 BA2220 BA2240 BA2270 BA3175 BA3185 BA3195 BA3200
+
+This is a shared Linux system. By using this system, you acknowledge that
+some information about your computer account (e.g. login name, process data,
+etc.) will be available to other users sharing this system, in ways 
+typical of shared Linux systems.  
+
+Last login: Thu Mar 29 01:43:26 2018 from b2200-16.teach.cs.toronto.edu
+dbsrv1:~$ cd csc343db
+dbsrv1:~/csc343db$ cd A3
+dbsrv1:~/csc343db/A3$ psql csc343h-teachma3
+psql (9.5.12)
+Type "help" for help.
+
+csc343h-teachma3=> \i runner.txt
+-- Loading schema and data:
+psql:schema.ddl:12: NOTICE:  drop cascades to 8 other objects
+DETAIL:  drop cascades to type schema.status
+drop cascades to type schema.email
+drop cascades to table schema.customer
+drop cascades to table schema.model
+drop cascades to table schema.station
+drop cascades to table schema.car
+drop cascades to table schema.reservation
+drop cascades to table schema.customer_reservation
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE DOMAIN
+CREATE DOMAIN
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+SET                                                                                                                                           
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+-- Query 1:
+SET
+psql:q1.sql:5: NOTICE:  view "cancelled" does not exist, skipping
+DROP VIEW
+psql:q1.sql:6: NOTICE:  view "not_cancelled" does not exist, skipping
+DROP VIEW
+psql:q1.sql:7: NOTICE:  view "num_cancelled" does not exist, skipping
+DROP VIEW
+psql:q1.sql:8: NOTICE:  view "num_not_cancelled" does not exist, skipping
+DROP VIEW
+psql:q1.sql:9: NOTICE:  view "num_reservations" does not exist, skipping
+DROP VIEW
+psql:q1.sql:10: NOTICE:  view "cancel_ratio" does not exist, skipping
+DROP VIEW
+psql:q1.sql:11: NOTICE:  view "result" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+       email       | cancel_ratio 
+-------------------+--------------
+ jj.swtz@mail.com  |            1
+ malik_aa@mail.com |          0.5
+(2 rows)
+
+-- Query 2:
+SET
+psql:q2.sql:5: NOTICE:  view "shared_reservations" does not exist, skipping
+DROP VIEW
+psql:q2.sql:6: NOTICE:  view "num_shared_reservations" does not exist, skipping
+DROP VIEW
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+  customer_email   
+-------------------
+ a.n@mail.com
+ malik_aa@mail.com
+(2 rows)
+
+-- Query 3:
+SET
+psql:q3.sql:5: NOTICE:  view "rentals" does not exist, skipping
+DROP VIEW
+psql:q3.sql:6: NOTICE:  view "toronto_models" does not exist, skipping
+DROP VIEW
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+  name  
+--------
+ BMW X5
+(1 row)
+
+-- Query 4:
+SET
+psql:q4.sql:5: NOTICE:  view "young_customers" does not exist, skipping
+DROP VIEW
+psql:q4.sql:6: NOTICE:  view "young_reservations" does not exist, skipping
+DROP VIEW
+psql:q4.sql:7: NOTICE:  view "changed" does not exist, skipping
+DROP VIEW
+psql:q4.sql:8: NOTICE:  view "recently_changed" does not exist, skipping
+DROP VIEW
+psql:q4.sql:9: NOTICE:  view "recent_and_young" does not exist, skipping
+DROP VIEW
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+ email 
+-------
+(0 rows)
+
+csc343h-teachma3=> 
+
