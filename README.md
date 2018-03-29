@@ -1,2 +1,2 @@
 # Databases
-Some projects done in Postgresql &amp; JDBC
+Some projects in Postgresql &amp; JDBC
